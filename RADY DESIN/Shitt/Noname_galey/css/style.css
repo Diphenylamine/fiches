@@ -1,0 +1,212 @@
+html {
+  width: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  width: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #1d1d1d;
+  font-family: 'Times New Roman', Times, serif;
+  color: #7f7f7f;
+  font-size: 15px;
+  line-height: 1.7;
+
+  width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contener {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+}
+
+.contener>* {
+  flex: 1 auto;
+}
+
+@font-face {
+  font-family: Cloud-Bold;
+  src: url(../fonts/Cloud-Bold\ 700.otf);
+  font-weight: 700;
+}
+
+header {
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #afafaf;
+}
+
+.logo>a {
+  font-size: 50px;
+  font-family: Cloud-Bold, sans-serif;
+  text-align: center;
+  color: #afafaf;
+  text-shadow: 10px 10px 20px #676767, -10px -10px 20px #676767;
+  letter-spacing: 5px;
+}
+
+.logo_nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  border-top: 1px solid #afafaf;
+}
+
+nav>a {
+  font-size: 35px;
+  color: #7f7f7f;
+}
+
+nav>a:hover {
+  color: #999;
+  text-shadow: 10px 10px 20px #676767, -10px -10px 20px #676767;
+  letter-spacing: 2px;
+}
+
+.main {
+  height: auto;
+  width: 100%;
+  color: #676767;
+}
+
+.first_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  color: #afafaf;
+}
+
+.first_section>img {
+  width: 500px;
+  height: 350px
+}
+
+.txt {
+  padding: 0 20px 0 20px;
+  min-width: auot;
+  width: 550px;
+  height: auto;
+  font-size: 35px;
+}
+
+.second_section {
+  margin-top: 150px;
+  background: url(../img/Art/nochnoj_gorod_vyveski_neon_139551_3840x2400.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.thirt_section {
+  margin-top: 150px;
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.thirt_section>img {
+  padding: 20px 0 20px 0;
+  min-width: auto;
+  min-height: auto;
+  width: 400px;
+  height: 250px;
+}
+
+footer {
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 75px;
+  height: 150px;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+footer>a {
+  font-size: 25px;
+  color: #7f7f7f;
+}
+
+@media all and (max-width:550px) {
+  .txt {
+    font-size: 25px;
+  }
+
+  .first_section>img {
+    width: 350px;
+    height: 200px
+  }
+}
+
+@media all and (max-width:400px) {
+
+  .main_img {
+    width: 260px;
+    height: 148px;
+  }
+
+  #log_txt {
+    font-size: 35px;
+  }
+}

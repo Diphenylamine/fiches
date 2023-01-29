@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	background: #141414;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.text {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.skill_bar {
+  width: 600px;
+  background: #242424;
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 20px 2px #000000;
+}
+.skill_line {
+  margin: 20px;
+}
+.skill_line > span {
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.progress {
+  width: 400px;
+  height: 15px;
+  background: #383838;
+  border: 1px solid #727272;
+  border-radius: 5px;
+}
+.progress_line {
+  height: 100%;
+  background: linear-gradient(45deg, #a900ff, transparent);
+  border-radius: 5px;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: move 0.5s linear forwards;
+}
+.progress_line::after {
+  content: '';
+  position: absolute;
+  border-top: 7px solid #444444;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  right: 0;
+  bottom: 13px;
+}
+.progress_line::before {
+  content: '';
+  height: 20px;
+  position: absolute;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 0 3px;
+  right: -15px;
+  bottom: 20px;
+}
+.html {
+  width: 80%;
+}
+.html::before {
+  content: '80%';
+}
+.css {
+  width: 75%;
+}
+.css::before {
+  content: '75%';
+}
+.js {
+  width: 50%;
+}
+.js::before {
+  content: '50%';
+}
+.php {
+  width: 60%;
+}
+.php::before {
+  content: '60%';
+}
+@keyframes move {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

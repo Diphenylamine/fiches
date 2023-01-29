@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DN Wiki</title>
+
+    <meta name="keywords"
+        content="Lite,  Kira, Light Yagami,  Tsugumi Oba ,death note wiki, death note, wiki deathnote, deathnote wiki, deathnote ">
+
+    <link rel="shortcut icon" href="img/faviico.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Js -->
+    <script src="js/app.js" defer></script>
+
+    <!--------------------------- Css style for slider --------------------->
+
+    <style>
+
+        /* дополнительные стили для этого примера */
+        .slider__items {
+            counter-reset: slide;
+        }
+
+        .slider__item {
+            position: relative;
+            counter-increment: slide;
+        }
+
+        .slider__item::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+            font-style: italic;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .img-fluid {
+            display: inline-block;
+            height: auto;
+            max-width: 100%;
+        }
+    </style>
+
+    <!--------------- Script for slider -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // инициализация слайдера
+            let slider = new SimpleAdaptiveSlider('.slider', {
+                autoplay: true,
+                interval: 10000,
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!--******************************************  -->
+    <!--                HEADER                      -->
+    <!--******************************************  -->
+
+    <header>
+        <div class="contener">
+            <div class="site_head">
+                <div class="logo_nav">
+
+                    <!--******************************************  -->
+                    <!--                LOGO                        -->
+                    <!--******************************************  -->
+
+                    <div class="logo">
+                        <div class="pict_logo">
+                            <a href="#">
+                                <img src="img/logo.png" alt="Death Note Wiki" title="Death Note Wiki">
+                                Death Note Wiki
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--******************************************  -->
+                    <!--            NAVIGATION                      -->
+                    <!--******************************************  -->
+
+                    <nav class="nav_list">
+                        <a href="#author_link" class="nav_list_item">author</a>
+                        <a href="#characters_link" class="nav_list_item">characters</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--******************************************  -->
+        <!--                 SLIDER                     -->
+        <!--******************************************  -->
+
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <img class="img-fluid" src="img/slider_img/1-slider.jpg"
+                            loading="lazy">
+                    </div>
+                    <div class="slider__item">
+                        <img class="img-fluid" src="img/slider_img/2-slider.jpg"
+                            loading="lazy">
+                    </div>
+                    <div class="slider__item">
+                        <img class="img-fluid" src="img/slider_img/3-slider.jpg"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+        </div>
+    </header>
+
+    <!--******************************************  -->
+    <!--                MAIN                        -->
+    <!--******************************************  -->
+
+    <main>
+
+        <!--******************************************  -->
+        <!--                AUTHOR                      -->
+        <!--******************************************  -->
+        <section class="author_section">
+            <div class="contener author_contener">
+                <a href="#" name="author_link" class="author_link">Tsugumi Oba</a>
+                <div class="box">
+                    <img src="img/person_section/author.jpeg" alt="Tsugumi Oba">
+                    <p>
+                        Tsugumi Ooba is a Japanese writer and screenwriter. He was born in Tokyo. He is the author of
+                        the famous manga Death Notebook. Oba's real name is unknown. Some fans think that Tsugumi Oba is
+                        just a pseudonym for Hiroshi Gamo. As stated in the profile, when work on the next installment
+                        of the Death Note manga begins, Oba collects cups and concocts the plot while holding his knees
+                        in his chair, like L, one of the main characters in the series.
+                        <a
+                            href="https://deathnote.fandom.com/ru/wiki/%D0%A6%D1%83%D0%B3%D1%83%D0%BC%D0%B8_%D0%9E%D0%BE%D0%B1%D0%B0">Read
+                            more</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--******************************************  -->
+        <!--                CHARACTERS                  -->
+        <!--******************************************  -->
+
+        <section class="characters_section">
+            <div class="contener characters_contener">
+                <a href="#" name="characters_link" class="characters_link">Characters</a>
+                <div class="box">
+                    <div class="post_box">
+                        <a href="#kira_link" class="character">
+                            <img src="img/character_img_section/kira.jpg" alt="">
+                        </a>
+                        <a href="#ryuk_link" class="character">
+                            <img src="img/character_img_section/ryuk.jpg" alt="Ryuk">
+                        </a>
+                    </div>
+                    <div class="post_box">
+                        <a href="#misa_link" class="character">
+                            <img src="img/character_img_section/misa.jpg" alt="Misa">
+                        </a>
+                        <a href="#l_link" class="character">
+                            <img src="img/character_img_section/l.jpg" alt="L">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--******************************************  -->
+        <!--            Person Section Kira             -->
+        <!--******************************************  -->
+
+        <section class="person kira">
+            <div class="contener person_contener">
+                <a href="#" name="kira_link">Light Yagami</a>
+                <div class="box">
+                    <img src="img/person_section/kira.jpg" alt="Kira">
+                    <p>The protagonist of the manga, anime series and Death Note films. In the story, Light is shown as
+                        a highly intelligent, calculating young man with a heightened sense of justice. As the series
+                        progresses, Light is shown to be in possession of the Notebook of Death, a notebook which can be
+                        used to kill a man with impunity once his name and face are written down. As the story
+                        progresses, he becomes a rather arrogant and condescending character, thinking himself to be the
+                        god of the new world. With the help of the Death Notebook, Yagami Light decided to create a new
+                        world without criminals and began punishing anyone who committed crimes. But later, when
+                        Detective L cornered him, he began gradually getting rid of anyone who sought him out or stood
+                        in his way.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="person misa">
+            <div class="contener person_contener">
+                <a href="#" name="misa_link">Misa Amane</a>
+                <div class="box">
+                    <img src="img/person_section/misa.jpg" alt="Misa">
+                    <p>
+                        The heroine of the manga, anime series and Death Notebook films. Famous photo model who won
+                        Readers' Choice magazine's "18" contest. Based on the film, a popular TV presenter. Few would
+                        have recognized her as the murderer who caused a stir in the Sakura TV studio, the second Kira.
+                        Grateful to Kira for punishing her parents' killer, she is willing to do whatever it takes to
+                        find him. Falling in love with Yagami Light, she makes a two-time deal with the God of Death to
+                        gain the Eyes of the God of Death and be of service to him. Often refers to herself in the third
+                        person, referring to herself as "Misa-Misa".
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="person ryuk">
+            <div class="contener person_contener">
+                <a href="#" name="ryuk_link">Ryuk</a>
+                <div class="box">
+                    <img src="img/person_section/ryuk.jpg" alt="Ryuk" id="ryuk_img">
+                    <p>
+                        One of the main characters from the manga, anime, films and computer games Death Notebook. The
+                        concept and image was invented by Tsugumi Oba and the character's appearance is by Takeshi
+                        Obata.
+                        Ryuk is one of the Death Gods, a supernatural creatures who need to kill mortals in order to
+                        prolong their lives by using the Death Notebook, a mystical artifact that kills a person after
+                        writing their name in it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="person L">
+            <div class="contener person_contener">
+                <a href="#" name="l_link">L</a>
+                <div class="box">
+                    <img src="img/person_section/l.jpg" id="L_img" alt="">
+                    <p>
+                        One of the main characters from the manga, anime series and Death Notebook movies. In the story,
+                        he is regarded as the best detective in the world and confronts serial killer Kira, who is in
+                        possession of the Death Notebook.
+                        He successfully hid his name, identity, and face even from Interpol, but in the process of
+                        investigating Kira, revealed his identity to the most trustworthy police officers and two
+                        suspects. With everyone else, he communicated by hiding his face behind the letter L, written in
+                        Old London script. The only confidant known to the audience by the beginning of the series is
+                        Watari. In addition to his alias "L", the character uses two other aliases, "Erald Coyle" , who
+                        are known as other prominent detectives. Before the investigation team and Yagami Light, he asks
+                        to call himself Ryuzaki , which he says is for conspiracy purposes. His real name, according to
+                        the manga, is Al Lawlai.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--******************************************  -->
+    <!--                FOOTER                      -->
+    <!--******************************************  -->
+
+
+    <footer>
+        <div class="contener">
+            <div class="contacts">
+                <a href="https://steamcommunity.com/profiles/76561198847526419/">
+                    <img src="img/Ico/steam_1.png" alt="Steam">
+                    <div class="contacts_txt">Steam</div>
+                </a>
+                <a href="https://github.com/shipchik">
+                    <img src="img/Ico/github_1.png" alt="GitHub">
+                    <div class="contacts_txt">GitHub</div>
+                </a>
+                <a href="https://t.me/shipchik14">
+                    <img src="img/Ico/telegram_1.png" alt="Telegram">
+                    <div class="contacts_txt">Telegram</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
